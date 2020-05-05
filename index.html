@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Grandma's Sweets </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap v4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Font Awesome v5 Kit -->
+    <script src="https://kit.fontawesome.com/9e98f3d98f.js" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <!-- icons -->
+    <!-- 
+        https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+        Creative Commons (Attribution 3.0 Unported);
+        https://www.iconfinder.com/korawan_m
+    -->
+    <!--end of icons icons -->
+
+  
+  <!--------------------------------
+              Start Header
+  ---------------------------------->
+    <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg px-4">
+
+        <img src="./resources/img/logo.svg" alt="Logo" class="navbar-brand">
+        <!-- end Logo -->
+        
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <!-- end navbar toggler button -->
+
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav  text-capitalize mx-auto">
+            <li class="nav-item active">
+              <a href="#header" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="#store" class="nav-link">store</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service" class="nav-link">service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cakes" class="nav-link">order</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end collapse menu item -->
+
+        <div class="nav-info-item d-none d-lg-flex">
+          <div class="nav-info d-flex align-items-center justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3">
+              <i class="fas fa-phone"></i>
+            </span>
+            <p class="mb-0">+ 012 345 678</p>
+          </div>
+          <!-- end nav info -->
+          <div id="cart-info" class="nav-info cart-info d-flex justify-content-between align-items-center mx-lg-5">
+            <span class="cart-info-icon mx-lg-3">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <p class="text-capitalize mb-0">
+              <span id="item-count">2</span>
+              items - $
+              <span id="item-total">10.29</span>
+            </p>
+          </div>
+          <!-- end nav cart info -->
+        </div>
+        <!-- end nav info item -->
+      </nav>
+<!-------- Start Banner -------->
+      <div class="container-fluid">
+        <div class="row homepage-banner justify-content-center align-items-center">
+          <div class="col-10 banner-text text-center mx-auto">
+            <h2 class="titled"> welcome to <strong>grandma's</strong> </h2>
+            <a href="#store" class="btn btn-linked">explore</a>
+          </div>
+          <!-- end homepage banner -->
+
+<!-------- Start cart -------->
+          <div class="cart p-3" id="cart">
+            
+            <div class="cart-items">
+              <div class="single-cart-item d-flex justify-content-between">
+                <img src="./resources/img/cart-img/cake-2.jpeg" alt="Cake">
+                <div class="text-content mb-0">
+                  <p class="text-capitalize mb-0">cart item</p>
+                  <p class="cart-price">
+                    <span>$</span>
+                    <span class="font-weight-bold">10.99</span>
+                  </p>
+                </div>
+                <a href="#" class="cart-remove"><i class="fas fa-trash"></i></a>
+              </div>
+            </div>
+            <!-- end cart items -->
+
+            <div class="cart-items">
+              <div class="single-cart-item d-flex justify-content-between">
+                <img src="./resources/img/cart-img/cupcake-1.jpeg" alt="Cake">
+                <div class="text-content mb-0">
+                  <p class="text-capitalize mb-0">cart item</p>
+                  <p class="cart-price">
+                    <span>$</span>
+                    <span class="font-weight-bold">10.99</span>
+                  </p>
+                </div>
+                <a href="#" class="cart-remove"><i class="fas fa-trash"></i></a>
+              </div>
+            </div>
+            <!-- end cart items -->
+
+            <div class="cart-total d-flex justify-content-around py-2">
+              <h5>Total</h5>
+              <h3>10.00</h3>
+            </div>
+            <!-- end cart total -->
+
+            <div class="cart-btn d-flex justify-content-between py-3">
+              <a href="#" class="btn btn-outline-primary">clear cart</a>
+              <a href="#" class="btn btn-outline-primary">checkout</a>
+            </div>
+            <!-- end cart button -->
+          </div>
+<!-------- Start cart -------->
+        </div>
+      </div>
+<!--------- End Banner --------->
+    </header>
+  <!--------------------------------
+              End Header 
+  ---------------------------------->
+  
+  <!--------------------------------
+              Start About 
+  ---------------------------------->
+    <section class="about py-5" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6 my-5 py-5 text-center">
+            <div class="about-text">
+              <h2 class="titled mb-5"> about <strong>us</strong> </h2>
+              <p class="w-75 mx-auto text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi provident nulla vero magni mollitia ex ipsa delectus deleniti veritatis quis amet debitis, neque, aut obcaecati.
+              </p>
+              <a href="#store" class="btn btn-linked">explore</a>
+            </div>
+          </div>
+          <!-- end About text -->
+          <div class="col-10 mx-auto col-md-6 my-5 py-5 align-self-center">
+            <div class="about-img">
+              <img src="./resources/img/sweets-1.jpeg" alt="About img" class="img-fluid">
+            </div>
+          </div>
+          <!-- end about img -->
+        </div>
+      </div>
+    </section>
+<!--------------------------------
+            End About 
+---------------------------------->
+  
+<!--------------------------------
+            Start Store 
+---------------------------------->
+    <section class="store py-5" id="store">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto col-sm-6 section-title text-center">
+            <h2 class="titled mb-5"> our <strong>store</strong> </h2>
+          </div>
+        </div>
+        <!-- end of row section title -->
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto d-flex flex-wrap justify-content-around filter-btn">
+            <a href="#" class="btn-linked filter-link-btn">all</a>
+            <a href="#" class="btn-linked filter-link-btn">cakes</a>
+            <a href="#" class="btn-linked filter-link-btn">cupcakes</a>
+            <a href="#" class="btn-linked filter-link-btn">sweets</a>
+            <a href="#" class="btn-linked filter-link-btn">doughnuts</a>
+          </div>
+        </div>
+        <!-- end of row filter btn -->
+
+        <div class="row">
+          <div class="col-10 mx-auto col-md-6 py-3 search-btn">
+            <form>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="search-icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+                <!-- end search icon -->
+                <input type="text" class="form-control" id="search-input" placeholder="Item...">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end of search btn -->
+
+        <div class="row" id="store-item">
+          
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/sweets-1.jpeg" alt="Sweet img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">sweet item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 01 sweet 01 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 cake">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/cake-1.jpeg" alt="cake img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">cake item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 02 cake 01 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 cupcake">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/cupcake-1.jpeg" alt="cupcake img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">cupcake item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 03 cupcake 01 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 doughnut">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/doughnut-1.jpeg" alt="doughnut img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">doughnuts item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 04 doughnut 01 -->
+          
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 sweet">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/sweets-2.jpeg" alt="Sweet img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">sweet item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 05 sweet 02 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 cake">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/cake-2.jpeg" alt="cake img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">cake item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 06 cake 02 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 cupcake">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/cupcake-2.jpeg" alt="cupcake img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">cupcake item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 07 cupcake 02 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 doughnut">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/doughnut-2.jpeg" alt="doughnut img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">doughnuts item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 08 doughnut 02 -->
+          
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 sweet">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/sweets-3.jpeg" alt="Sweet img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">sweet item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 09 sweet 03 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 cake">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/cake-3.jpeg" alt="cake img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">cake item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 10 cake 03 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 cupcake">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/cupcake-3.jpeg" alt="cupcake img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">cupcake item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 11 cupcake 03 -->
+
+          <div class="col-10 col-sm-6 col-lg-4 mx-auto my-5 doughnut">
+            <div class="card single-store-item">
+              <div class="img-container">
+                <img src="./resources/img/doughnut-3.jpeg" alt="doughnut img" class="card-img-top store-img">
+                <span class="store-img-icon"><i class="fas fa-shopping-cart"></i></span>
+              </div>
+              <!-- end card img -->
+              <div class="card-body">
+                <div class="card-body-text d-flex justify-content-between">
+                  <h4 class="text-capitalize font-weight-bold" id="store-item-name">doughnuts item</h4>
+                  <h4 id="store-item-value">$ <strong class="store-item-price">5</strong> </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single store item 12 doughnut 03 -->
+
+        </div>
+        <!-- end of row store item -->
+      </div>
+    </section>
+  <!--------------------------------
+              End Store 
+  ---------------------------------->
+  
+  <!--------------------------------
+              Start Service 
+  ---------------------------------->
+    <section class="service py-5" id="service">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-10 mx-auto col-md-4 single-service my-3 text-center">
+            <img src="./resources/img/bread-icon.png" alt="Bread img">
+            <h5 class="text-uppercase my-3">bread</h5>
+            <p class="w-75 mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cumque dicta odio numquam reiciendis voluptates repellat cum aut rem impedit. Velit dicta aliquid est quos accusamus officia optio quas qui.
+            </p>
+          </div>
+          <!-- end single service 01 -->
+
+          <div class="col-10 mx-auto col-md-4 single-service my-3 text-center">
+            <img src="./resources/img/cupcake-icon.png" alt="Bread img">
+            <h5 class="text-uppercase my-3">cupcake</h5>
+            <p class="w-75 mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cumque dicta odio numquam reiciendis voluptates repellat cum aut rem impedit. Velit dicta aliquid est quos accusamus officia optio quas qui.
+            </p>
+          </div>
+          <!-- end single service 02 -->
+
+          <div class="col-10 mx-auto col-md-4 single-service my-3 text-center">
+            <img src="./resources/img/candy-icon.png" alt="Bread img">
+            <h5 class="text-uppercase my-3">candy</h5>
+            <p class="w-75 mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cumque dicta odio numquam reiciendis voluptates repellat cum aut rem impedit. Velit dicta aliquid est quos accusamus officia optio quas qui.
+            </p>
+          </div>
+          <!-- end single service 01 -->
+
+        </div>
+      </div>
+    </section>
+  <!--------------------------------
+              End Service 
+  ---------------------------------->
+  
+  <!--------------------------------
+              Start Order>Cakes 
+  ---------------------------------->
+    <section class="cakes py-5" id="cakes">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto col-sm-6 section-title text-center">
+            <h2 class="titled mb-5"> order <strong>cakes</strong> </h2>
+          </div>
+        </div>
+        <!-- end of row section title -->
+
+        <div class="row">
+
+          <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 single-order text-capitalize text-center">
+            <h4 class="py-3">birthday cake</h4>
+            <p class="my-3  text-muted">birthday cake with a name</p>
+            <p class="my-3  text-muted">custom ingredients</p>
+            <p class="my-3  text-muted">custom size</p>
+            <p class="my-3 text-muted">custom design</p>
+            <a href="#" class="btn-linked">order now</a>
+            <p class="my-3  text-muted">starting at </p>
+            <img src="./resources/img/trans-cake.png" alt="Birthday Cake" class="img-fluid">
+          </div>
+          <!-- single order 01 -->
+
+          <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 single-order text-capitalize text-center">
+            <h4 class="py-3">custom cake</h4>
+            <p class="my-3  text-muted">custom cake with a name</p>
+            <p class="my-3  text-muted">custom ingredients</p>
+            <p class="my-3  text-muted">custom size</p>
+            <p class="my-3 text-muted">custom design</p>
+            <a href="#" class="btn-linked">order now</a>
+            <p class="my-3  text-muted">starting at </p>
+            <img src="./resources/img/trans-custom.png" alt="Birthday Cake" class="img-fluid">
+          </div>
+          <!-- single order 01 -->
+
+          <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 single-order text-capitalize text-center">
+            <h4 class="py-3">wedding cake</h4>
+            <p class="my-3  text-muted">wedding cake with a name</p>
+            <p class="my-3  text-muted">custom ingredients</p>
+            <p class="my-3  text-muted">custom size</p>
+            <p class="my-3 text-muted">custom design</p>
+            <a href="#" class="btn-linked">order now</a>
+            <p class="my-3  text-muted">starting at </p>
+            <img src="./resources/img/trans-wedding.png" alt="Birthday Cake" class="img-fluid">
+          </div>
+          <!-- single order 01 -->
+
+        </div>
+      </div>
+    </section>
+  <!--------------------------------
+              End Order>Cakes 
+  ---------------------------------->
+  
+  <!--------------------------------
+              Start Footer 
+  ---------------------------------->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 footer-title text-center py-5">
+            <h2 class="titled"><strong>grandma's</strong></h2>
+            <p class="d-flex flex-wrap justify-content-around py-4">
+              <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="footer-icon"><i class="fab fa-google-plus"></i></a>
+              <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+          <!-- footer title -->
+
+          <div class="col-md-6 footer-contact py-5">
+            <h4 class="text-center mb-4">Contact</h4>
+            <p class="d-flex mr-4 text-capitalize">
+              <span class="footer-icon mx-4"><i class="fas fa-map"></i></span>
+              <span>123 main street, san de fo.</span>
+            </p>
+            <p class="d-flex mr-4 text-capitalize">
+              <span class="footer-icon mx-4"><i class="fas fa-phone"></i></span>
+              <span>123-456-789</span>
+            </p>
+            <p class="d-flex mr-4 text-capitalize">
+              <span class="footer-icon mx-4"><i class="fas fa-envelope"></i></span>
+              <span>info@gradma.com</span>
+            </p>
+          </div>
+          <!-- footer contact -->
+        </div>
+      </div>
+    </footer>
+  <!--------------------------------
+              End Footer 
+  ---------------------------------->
+
+    
+
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<script src="./app.js"></script>
+  </body>
+</html>

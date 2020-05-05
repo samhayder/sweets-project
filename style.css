@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Kaushan+Script&display=swap');
+/*      font-family: 'Kaushan Script', cursive;
+        font-family: 'EB Garamond', serif; */
+
+:root {
+	--mainPink: #ef7998;
+	--mainWhite: #ffffff;
+	--mainBlack: #000000;
+	--mainGrey: rgb(238, 238, 238);
+	--mainYellow: rgb(249, 228, 148);
+	--yellowTrans: rgba(249, 228, 148, 0.5);
+}
+
+body {
+	font-family: 'EB Garamond', serif;
+	background: var(--mainWhite);
+	color: var(--mainBlack);
+	margin: 0;
+	padding: 0;
+	font-size: 1.125rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Global Style CSS */
+.titled {
+	color: var(--mainBlack);
+	font-size: 3rem;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.titled strong {
+	font-family: 'Kaushan Script', cursive;
+	color: var(--mainPink);
+	font-size: 4.5rem;
+	font-style: initial;
+}
+
+.btn-linked {
+	border: 0.2rem solid var(--mainBlack);
+	font-style: italic;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 0.7rem 2rem;
+	margin-top: 2.5rem;
+	transition: all 1s ease;
+}
+.btn-linked:hover {
+	background: var(--mainPink);
+	border-color: var(--mainPink);
+	color: var(--mainWhite);
+	text-decoration: none !important;
+}
+
+/*------------------------------
+            HEADER
+--------------------------------*/
+.navbar-toggler {
+	outline: none !important;
+}
+.navbar-toggler-icon {
+	color: var(--mainPink);
+	font-size: 2.5rem;
+}
+
+.nav-link {
+	color: var(--mainPink);
+	font-size: 1.5rem;
+	font-weight: 700;
+	transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+	color: var(--mainBlack);
+	border-bottom: 0.1rem solid var(--mainPink);
+}
+
+.info-icon {
+	cursor: pointer;
+}
+
+.cart-info {
+	border: 0.1rem solid var(--mainBlack);
+	border-radius: 0.25rem;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	transition: all 1s ease-in-out;
+}
+.cart-info:hover {
+	background: var(--mainPink);
+	border-color: var(--mainPink);
+	color: var(--mainWhite);
+}
+
+.cart-info-icon {
+	transition: all 1s ease;
+}
+.cart-info:hover .cart-info-icon {
+	margin: 0;
+	transform: scale(1.2);
+	color: var(--mainWhite);
+}
+
+/*------------------------------
+            Banner
+--------------------------------*/
+.homepage-banner {
+	position: relative;
+	height: calc(100vh - 76px);
+	background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+		url('/resources/img/headerBcg.jpeg') center/cover fixed no-repeat;
+}
+
+.banner-text {
+	color: var(--mainWhite);
+}
+
+/*------------------------------
+            About
+--------------------------------*/
+.about-img {
+	position: relative;
+}
+
+.about-img::before {
+	position: absolute;
+	content: " ";
+	width: 100%;
+	height: 100%;
+	top: -1.5rem;
+	left: -1.7rem;
+	outline: 0.5rem solid var(--mainYellow);
+	z-index: -1;
+	transition: all 1s linear;
+}
+.about-img:hover::before {
+	top: 0;
+	left: 0;
+}
+
+/*------------------------------
+            Store
+--------------------------------*/
+.store {
+	background: var(--mainGrey);
+}
+
+.filter-link-btn.btn-linked {
+	padding: 0.5rem;
+	margin: 0 !important;
+	font-size: 1rem;
+}
+
+.single-store-item {
+	transition: all 1s ease;
+}
+
+.single-store-item:hover {
+	box-shadow: 0 10px 15px #000;
+}
+
+.img-container {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.store-img {
+	transition: all 1s ease;
+}
+
+.store-img:hover {
+	transform: scale(1.2);
+}
+
+.store-img-icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: var(--mainYellow);
+	padding: 0.75rem;
+	border-top-left-radius: 1rem;
+	transform: translate(100%, 100%);
+	transition: all 1s ease;
+}
+
+.img-container:hover .store-img-icon {
+	transform: translate(0, 0);
+}
+
+.store-img-icon:hover {
+	color: var(--mainPink);
+}
+
+/*------------------------------
+            Service
+--------------------------------*/
+.service {
+	color: var(--mainWhite);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url('/resources/img/servicesBcg.jpeg')center/cover fixed no-repeat;
+}
+.service h5 {
+	font-family: 'Kaushan Script', cursive;
+	letter-spacing: 0.6rem;
+}
+.service p {
+	word-spacing: 0.6rem;
+}
+
+/*------------------------------
+            Order>Cakes
+--------------------------------*/
+.single-order h4 {
+	font-family: 'Kaushan Script', cursive;
+}
+.single-order .btn-linked {
+	text-transform: capitalize;
+	border-color: var(--mainPink);
+	color: var(--mainPink);
+}
+.single-order .btn-linked:hover {
+	color: var(--mainBlack);
+}
+
+/*------------------------------
+            Footer
+--------------------------------*/
+.footer-title {
+	background: var(--mainBlack);
+}
+
+.footer-icon {
+	color: var(--mainPink);
+	font-size: 1.5rem;
+}
+
+.footer-contact {
+	background: var(--mainGrey);
+}
+.footer-contact h4 {
+	font-family: 'Kaushan Script', cursive;
+}
+
+/*------------------------------
+            HEADER
+--------------------------------*/
+.cart {
+	font-family: 'Kaushan Script', cursive;
+	background: rgba(249, 228, 148, 0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 18rem;
+	height: auto;
+	transition: all 1s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+}
+.show-cart {
+	opacity: 1;
+	visibility: visible;
+	transform: rotateY(-360deg);
+}
+
+.single-cart-item {
+	border-bottom: 1px solid;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.single-cart-item img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
